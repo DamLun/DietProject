@@ -24,6 +24,15 @@ public class RecipeItem {
 	@JoinColumn(name = "id_ingredient")
 	private Ingredient ingredient;
 	
+	public RecipeItem() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public RecipeItem(int quantity, Ingredient ingredient){
+		this.quantity = quantity;
+		this.ingredient = ingredient;
+	}
+	
 	public Ingredient getIngredient() {
 		return ingredient;
 	}

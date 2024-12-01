@@ -25,6 +25,14 @@ public class Recipe {
 		return id_recipe;
 	}
 
+	public Set<RecipeItem> getItems() {
+		return items;
+	}
+
+	public void setItems(Set<RecipeItem> items) {
+		this.items = items;
+	}
+
 	public void setRecipe_id(Long id_recipe) {
 		this.id_recipe = id_recipe;
 	}

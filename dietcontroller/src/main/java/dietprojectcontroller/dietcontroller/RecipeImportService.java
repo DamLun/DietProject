@@ -8,7 +8,10 @@ import java.time.LocalDate;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.annotation.RequestScope;
 import org.springframework.web.multipart.MultipartFile;
 
 import dietprojectmodel.dietmodel.Ingredient;
@@ -18,7 +21,7 @@ import dietprojectmodel.dietmodel.RecipeItem;
 import dietprojectmodel.dietmodel.RecipeItemRepository;
 import dietprojectmodel.dietmodel.RecipeRepository;
 
-@Service
+@RequestScope
 public class RecipeImportService {
 
 	private final RecipeRepository recipeRepository;
